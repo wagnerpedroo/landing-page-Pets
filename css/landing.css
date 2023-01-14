@@ -3,5 +3,161 @@
 * {
     padding: 0;
     margin: 0;
-    font: normal 1em system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 150px;
+}
+
+/* HEADER - CABECALHO */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+header > div.container {
+    display: flex;
+    align-items: center;
+}
+
+div.container > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+div.container > ul > li {
+    margin: 6px;
+    font-weight: 600;
+    user-select: none;
+}
+div.container > ul > li:first-child {
+    /* color: #0d0439; */
+}
+
+div.container > ul > .specialItem:not(.active){
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #017dc5;
+    color: white;
+    text-align: center;
+}
+
+div.container > ul > li:hover {
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 1px solid #017dc5;
+    width: 100%;
+    border-bottom-width: 3px;
+}
+
+div.container div.socialmedias {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+div.container div.socialmedias >  div.insta {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+div.container div.socialmedias >  div.insta:hover {
+    cursor: pointer;
+}
+
+div.container div.socialmedias >  div.youtube {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+div.container div.socialmedias >  div.youtube:hover {
+    cursor: pointer;
+}
+
+/* MAIN  */
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #003554;
+    border-radius: 80px;
+    padding: 30px;
+    background-image: url('../image/pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1460px;
+}
+
+main > section {
+    /*position: absolute;
+    top: 90px;*/
+    margin-left: 5%;
+    z-index: 2;
+}
+
+main > section h1 {
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+}
+
+main > section h1 > span {
+    color: #003554;
+    font-weight: bold;
+}
+
+main > section h1 span.last {
+    color: #efa53a;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 390px;
+}
+
+main div.btn {
+    margin-top: 15px;
+}
+
+main div.btn button {
+    padding: 10px 25px;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    background-color: #017dc5;
+    color: white;
+    font-weight: bold;
+}
+
+main div.btn button:hover {
+    cursor: pointer;
+}
+
+aside {
+    
+}
+
+aside img {
+    max-width: 100%;
 }
