@@ -155,9 +155,9 @@ main div.btn button:hover {
 }
 
 aside {
-    
+   position: relative;
 }
 
 aside img {
-    max-width: 100%;
+    
 }
